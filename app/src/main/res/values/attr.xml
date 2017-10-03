@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CountDownView">
+        <attr name="arc_circle_color" format="color"/>
+        <attr name="in_circle_color" format="color"/>
+        <attr name="txt_time_color" format="color"/>
+    </declare-styleable>
+</resources>
