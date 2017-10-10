@@ -1,4 +1,4 @@
-package com.chenh.customview;
+package com.chenh.customview.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -12,6 +12,8 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.WindowManager;
+
+import com.chenh.customview.R;
 
 import java.util.Timer;
 import java.util.TimerTask;

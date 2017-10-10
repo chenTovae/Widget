@@ -1,8 +1,14 @@
 package com.chenh.customview;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
+
+import com.chenh.customview.activity.CountDownViewActivity;
+import com.chenh.customview.activity.RootLayoutActivity;
+import com.chenh.customview.view.RootLayout;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,12 +17,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        CountDownView mCountDownView = (CountDownView) findViewById(R.id.count_view);
-        mCountDownView.start(new CountDownView.OnCountDownCallback() {
+        findViewById(R.id.mCountDownView).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onComplete() {
-                Toast.makeText(MainActivity.this, "倒计时已经完成，做点什么事吧", Toast.LENGTH_SHORT).show();
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, CountDownViewActivity.class));
             }
         });
+
+        findViewById(R.id.root_layout).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, RootLayoutActivity.class));
+            }
+        });
+
     }
 }

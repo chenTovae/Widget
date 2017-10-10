@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="root_layout" type="id">root_layout</item>
+    <item name="tip_imageview" type="id">tip_imageview</item>
+    <item name="tip_textview" type="id">tip_textview</item>
+</resources>
